@@ -1,0 +1,248 @@
+2021-11-18 12:08:27,362 Scheduler started
+2021-11-18 12:08:27,779 Scheduler started
+2021-11-18 12:08:28,305 Scheduler started
+2021-11-18 12:08:28,460 Scheduler started
+2021-11-18 12:08:28,538 Scheduler started
+2021-11-18 12:08:28,620 Scheduler started
+2021-11-18 12:08:28,642 Scheduler started
+2021-11-18 12:08:28,650 Scheduler started
+2021-11-18 12:08:28,665 Scheduler started
+2021-11-18 12:11:29,091 Scheduler started
+2021-11-18 12:11:29,358 Scheduler started
+2021-11-18 12:11:29,503 Scheduler started
+2021-11-18 12:11:29,697 Scheduler started
+2021-11-18 12:11:29,721 Scheduler started
+2021-11-18 12:11:29,732 Scheduler started
+2021-11-18 12:11:29,743 Scheduler started
+2021-11-18 12:11:29,765 Scheduler started
+2021-11-18 12:11:29,781 Scheduler started
+2021-11-18 14:12:46,145 Scheduler started
+2021-11-18 14:12:46,350 Scheduler started
+2021-11-18 14:12:46,535 Scheduler started
+2021-11-18 14:12:46,752 Scheduler started
+2021-11-18 14:12:46,758 Scheduler started
+2021-11-18 14:12:46,778 Scheduler started
+2021-11-18 14:12:46,801 Scheduler started
+2021-11-18 14:12:46,825 Scheduler started
+2021-11-18 14:12:46,828 Scheduler started
+2021-11-18 14:12:58,055 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/psiturk/experiment.py", line 518, in start_exp
+    return render_template(
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/swijenayake/Documents/Other Projects/Amazon/psiturk-example/templates/exp.html", line 38, in template
+    var mode = "{{ mode }}";
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2021-11-18 14:15:55,711 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/psiturk/experiment.py", line 518, in start_exp
+    return render_template(
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/swijenayake/Documents/Other Projects/Amazon/psiturk-example/templates/exp.html", line 38, in template
+    var mode = "{{ mode }}";
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2021-11-18 14:16:28,464 Scheduler started
+2021-11-18 14:16:29,059 Scheduler started
+2021-11-18 14:16:29,580 Scheduler started
+2021-11-18 14:16:30,015 Scheduler started
+2021-11-18 14:16:30,021 Scheduler started
+2021-11-18 14:16:30,245 Scheduler started
+2021-11-18 14:16:30,263 Scheduler started
+2021-11-18 14:16:30,326 Scheduler started
+2021-11-18 14:16:30,334 Scheduler started
+2021-11-18 14:16:32,497 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/psiturk/experiment.py", line 518, in start_exp
+    return render_template(
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/swijenayake/Documents/Other Projects/Amazon/psiturk-example/templates/exp.html", line 38, in template
+    var mode = "{{ mode }}";
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2021-11-18 14:20:59,104 Scheduler started
+2021-11-18 14:20:59,176 Scheduler started
+2021-11-18 14:20:59,571 Scheduler started
+2021-11-18 14:20:59,951 Scheduler started
+2021-11-18 14:20:59,993 Scheduler started
+2021-11-18 14:21:00,154 Scheduler started
+2021-11-18 14:21:00,189 Scheduler started
+2021-11-18 14:21:00,399 Scheduler started
+2021-11-18 14:21:00,471 Scheduler started
+2021-11-18 14:21:02,969 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/psiturk/experiment.py", line 518, in start_exp
+    return render_template(
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/swijenayake/Documents/Other Projects/Amazon/psiturk-example/templates/exp.html", line 38, in template
+    var mode = "{{ mode }}";
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2021-11-18 14:26:17,643 Scheduler started
+2021-11-18 14:26:18,583 Scheduler started
+2021-11-18 14:26:18,750 Scheduler started
+2021-11-18 14:26:19,008 Scheduler started
+2021-11-18 14:26:19,164 Scheduler started
+2021-11-18 14:26:19,176 Scheduler started
+2021-11-18 14:26:19,419 Scheduler started
+2021-11-18 14:26:19,460 Scheduler started
+2021-11-18 14:26:19,558 Scheduler started
+2021-11-18 14:26:46,930 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/psiturk/experiment.py", line 518, in start_exp
+    return render_template(
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/swijenayake/.pyenv/versions/3.8.0/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/swijenayake/Documents/Other Projects/Amazon/psiturk-example/templates/exp.html", line 38, in template
+    var mode = "{{ mode }}";
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2021-11-18 14:36:41,299 Scheduler started
+2021-11-18 14:36:41,441 Scheduler started
+2021-11-18 14:36:41,518 Scheduler started
+2021-11-18 14:36:41,642 Scheduler started
+2021-11-18 14:36:41,707 Scheduler started
+2021-11-18 14:36:41,782 Scheduler started
+2021-11-18 14:36:41,790 Scheduler started
+2021-11-18 14:36:41,831 Scheduler started
+2021-11-18 14:36:41,869 Scheduler started
