@@ -27,12 +27,12 @@ function counting() {
             preamble: '<img style="max-width: 80%" src="/static/images/counting/' + images[i] + '.jpg" />',
             prompt: 'Number of cells?',
             inputhtml: '<input type="number" min="1" max="999" name="#jspsych-survey-text-response"  autofocus />',
-            data: {trial_category: 'counting', correct_response: correct_responses[i], unique_trial_id: 1101+i},
+            data: {trial_category: 'counting', correct_response: correct_responses[i], unique_trial_id: 1101+i, required:true},
             on_finish: function (data) {
                 data.correct = data.response == data.correct_response;
-
-                var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
-                jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/8));
+//
+//                var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
+//                jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/8));
             }
         });
     }

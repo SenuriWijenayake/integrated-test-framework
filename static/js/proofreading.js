@@ -9,7 +9,7 @@ function proofreading() {
         "Leave the input box blank if there is no mistake.</p>",
         post_trial_gap: 500,
         choices: ['Start'],
-        data: {trial_category: 'instructions', unique_trial_id: 1490}
+        data: {trial_category: 'instructions', unique_trial_id: 1490, required:true}
     };
 
     timeline.push(instructions_block);
@@ -17,7 +17,7 @@ function proofreading() {
     var trials = [
         {
             prompt: "The place was not only pleasent, but perfect, if once he could regard it not as a deception but rather as a dream",
-            data: { correct_response: 'pleasant', trial_category: 'proofreading', unique_trial_id: 1401}
+            data: { correct_response: 'pleasant', trial_category: 'proofreading', unique_trial_id: 1401},
         },
         {
             prompt: "More especially this attractive unreality fell upon it about nightfall, when the extravagant roofs were dark against the afterglow and the whole insane village seemed as seperate as a drifting cloud.",
@@ -75,8 +75,8 @@ function proofreading() {
             on_finish: function (data) {
                 data.correct = data.response == data.correct_response;
 
-                var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
-                jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/16));
+//                var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
+//                jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/16));
             }
         }],
         timeline_variables: trials,

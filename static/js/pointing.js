@@ -176,8 +176,8 @@ function pointing() {
             trial_duration: 1000,
             choices: jsPsych.NO_KEYS,
             on_load: function () {
-                var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
-                jsPsych.setProgressBar(progress_bar_width*0.01 + (0.1/6) );
+//                var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
+//                jsPsych.setProgressBar(progress_bar_width*0.01 + (0.1/6) );
             }
         });
         timeline_pointing.push(trialList[t]);

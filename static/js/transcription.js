@@ -50,8 +50,8 @@ function transcription() {
             inputhtml: '<textarea cols="100" rows="2" name="#jspsych-survey-text-response"  autofocus></textarea>',
             data: jsPsych.timelineVariable('data'),
             on_finish: function (data) {
-                var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
-                jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/16));
+//                var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
+//                jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/16));
             }
         }],
         timeline_variables: trials,

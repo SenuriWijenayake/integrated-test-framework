@@ -57,8 +57,8 @@ function nBack() {
                     }
                     data.correct = correct;
 
-                    var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
-                    jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/16));
+//                    var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
+//                    jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/16));
                 },
                 data: jsPsych.timelineVariable('data')
             },

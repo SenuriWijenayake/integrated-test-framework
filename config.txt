@@ -1,6 +1,6 @@
 [HIT Configuration]
-title = Study on Cognitive Skills of Crowdworkers
-description = The HIT contains a set of cognitive tests and typical crowdsourcing tasks.
+title = Developing a Test Suite to Measure Crowdworker Performance
+description = The HIT contains a series of tests to determine measure crowd worker performance in typical crowdsourcing tasks.
 amt_keywords = Cognitive
 lifetime = 24
 us_only = true
@@ -18,7 +18,7 @@ table_name = demo
 
 [Server Parameters]
 host = localhost
-port = 22362
+port = 8080
 cutoff_time = 60
 logfile = server.log
 loglevel = 2

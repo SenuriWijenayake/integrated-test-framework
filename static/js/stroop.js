@@ -5,7 +5,6 @@ function stroop() {
 
     var timeline = [];
 
-
     var instructions_block = {
         type: "html-button-response",
         stimulus: "<p><strong>Instructions</strong></p><p>In this experiment, a word will appear in the center " +
@@ -97,9 +96,8 @@ function stroop() {
         data: jsPsych.timelineVariable('data'),
         on_finish: function (d) {
             d.correct = d.key_press == d.correct_response.charCodeAt(0);
-
-            var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
-            jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/18));
+//            var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
+//            jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/18));
 
         }
     };

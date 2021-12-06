@@ -100,8 +100,8 @@ function sentiment() {
                 on_finish: function (d) {
                     d.correct = d.button_pressed == d.correct_response;
 
-                    var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
-                    jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/16));
+//                    var progress_bar_width = $('#jspsych-progressbar-inner')[0].style.width.slice(0,-1);
+//                    jsPsych.setProgressBar(progress_bar_width*0.01+(0.1/16));
                 }
             }],
             timeline_variables: trials,

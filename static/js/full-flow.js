@@ -3,41 +3,71 @@ var psiturk = new PsiTurk(uniqueId, adServerLoc, mode);
 
 var timeline = [];
 
+// Welcome block
 var welcome_block = {
     type: "html-button-response",
     stimulus: "<p><strong>Welcome</strong></p>" +
-    "<p>You will complete 10 tasks (5 cognitive tests and 5 crowdsourcing tasks).</p>" +
-    "<p><strong>Read the instructions carefully </strong> before starting each task. Instructions will not be repeated.</p> ",
+    "<p>You will complete 14 tasks. This includes a series of tests that assess your cognitive skills,</p> " +
+    "<p>personality, alertness, mood and emotion, followed by a set of crowdsourcing tasks.</p>" +
+    "<p>Please ensure that you complete all 14 tasks in a single sitting to receive payment. </p>" +
+    "<p><strong>You will not receive any payment if you do not complete all tasks.</strong></p>" +
+    "<p><strong>Read the instructions carefully </strong>before starting each task. </p> <p>Instructions will not be repeated.</p> ",
     choices: ['Continue']
 };
 
 timeline.push(welcome_block);
 
+// Setting up tests
 
 var cognitiveTests  = [stroop(),flanker(),taskSwitching(),pointing(),nBack()];
+var allTests = [mood(),emotion(),personality(),alertness(),cognitiveTests];
 
+// Populate timeline with tests
 var randomIndex = jsPsych.randomization.shuffle([0,1,2,3,4]);
+var taskNumber = 1;
 
 for (let t in randomIndex){
-    var taskNumber = t*1+1;
-    timeline.push({
-        type: "html-button-response",
-        stimulus: "<p><strong>Task "+ taskNumber +
-        "</strong></p><p>&nbsp;</p>",
-        choices: ['Continue'],
-        on_load: function () {
-            jsPsych.setProgressBar((t*1)*0.1);
+
+    if (allTests[randomIndex[t]] == cognitiveTests){
+        // For cognitive tests
+        var newRandomIndex = jsPsych.randomization.shuffle([0,1,2,3,4]);
+        for (let i in newRandomIndex){
+            timeline.push({
+                type: "html-button-response",
+                stimulus: "<p><strong>Task "+ taskNumber +
+                "</strong></p><p>&nbsp;</p>",
+                choices: ['Continue'],
+                on_load: function () {
+//                    jsPsych.setProgressBar((t*1)*0.1+0.5);
+                }
+            });
+            timeline = timeline.concat(cognitiveTests[newRandomIndex[i]]);
+            taskNumber = taskNumber + 1;
         }
-    });
-    timeline = timeline.concat(cognitiveTests[randomIndex[t]]);
+    }
+
+     else {
+        timeline.push({
+            type: "html-button-response",
+            stimulus: "<p><strong>Task "+ taskNumber +
+            "</strong></p><p>&nbsp;</p>",
+            choices: ['Continue'],
+            on_load: function () {
+//                jsPsych.setProgressBar((t*1)*0.1+0.5);
+            }
+        });
+        timeline = timeline.concat(allTests[randomIndex[t]]);
+        taskNumber = taskNumber + 1;
+     }
 }
 
+// Setting up tasks
 var crowdsourcingTasks = [proofreading(),sentiment(),counting(),classification(),transcription()];
 
 randomIndex = jsPsych.randomization.shuffle([0,1,2,3,4]);
 
 for (let t in randomIndex){
-    var taskNumber = t*1+6;
+    var taskNumber = t*1+9;
     timeline.push({
         type: "html-button-response",
         stimulus: "<p><strong>Task "+ taskNumber +
@@ -45,7 +75,7 @@ for (let t in randomIndex){
         choices: ['Continue'],
         on_load: function () {
             // console.log((t*1-1)*10);
-            jsPsych.setProgressBar((t*1)*0.1+0.5);
+//            jsPsych.setProgressBar((t*1)*0.1+0.5);
         }
     });
     timeline = timeline.concat(crowdsourcingTasks[randomIndex[t]]);
@@ -54,11 +84,11 @@ for (let t in randomIndex){
 timeline.push({
     type: "html-button-response",
     stimulus: "<p><strong>You have completed all the tasks." +
-    "</strong></p><p>Click the button below to answer 3 demographics questions.</p>",
+    "</strong></p><p>Click the button below to answer a short questionnaire on your context and demographics.</p>",
     choices: ['Continue'],
     button_htm: ['<button class="jspsych-btn">%choice%</button>'],
     on_load: function () {
-        jsPsych.setProgressBar(0.98);
+//        jsPsych.setProgressBar(0.98);
     }
 });
 
@@ -87,6 +117,10 @@ jsPsych.init({
                 case 'sentiment':
                 case 'counting':
                 case 'classification':
+                case 'alertness':
+                case 'personality':
+                case 'mood':
+                case 'emotion':
                 case 'proofreading':{
                     const trialData = {
                         rt: data.rt,
@@ -124,7 +158,7 @@ jsPsych.init({
                         is_error: data.is_error
                     };
                     psiturk.recordTrialData(trialData);
-                    // console.log(trialData);
+                    console.log(trialData);
                     break;
                 }
                 case 'example':
@@ -136,7 +170,7 @@ jsPsych.init({
                         trial_index: data.trial_index,
                     };
                     psiturk.recordTrialData(trialData);
-                    // console.log(trialData);
+                    console.log(trialData);
                     break;
                 }
             }
@@ -151,5 +185,5 @@ jsPsych.init({
         });
     },
     show_progress_bar: true,
-    auto_update_progress_bar: false
+    auto_update_progress_bar: true
 });
