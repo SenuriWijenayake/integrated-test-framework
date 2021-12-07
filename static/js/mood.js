@@ -9,7 +9,7 @@ function mood(){
         "<p> The survey includes a character-based pictorial scale for reporting moods.</p>" +
          "<p>Select the <b>letter</b> that corresponds to the pictorial representation of the mood </p><p>that most closely resembles your <b>current</b> mood - as objectively as possible.</p>",
         choices: ['Continue'],
-        data: {trial_category: 'instructions', unique_trial_id: 4100}
+        data: {trial_category: 'instructions', unique_trial_id: 690}
     };
 
     timeline.push(instructions_block);
@@ -22,10 +22,9 @@ function mood(){
                 required: true,
                 stimulus: "../static/images/mood/mood.jpg",
                 choices: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'],
-                data: {trial_category:'mood',unique_trial_id:4101},
+                data: {trial_category:'mood',unique_trial_id:601},
                 on_finish: function (data) {
                     data.response = choices[data.button_pressed];
-
                 }
             }
         ]

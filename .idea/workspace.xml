@@ -2,30 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="057b081d-cbb0-4568-8b1e-21d3e9201ddd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/alertness.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/emotion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/mood.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/personality.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.psiturk_history" beforeDir="false" afterPath="$PROJECT_DIR$/.psiturk_history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/participants.db" beforeDir="false" afterPath="$PROJECT_DIR$/participants.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/classification.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/classification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/counting.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/counting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/flanker.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/flanker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/alertness.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/alertness.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/emotion.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/emotion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/full-flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/full-flow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/n-back.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/n-back.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/pointing.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/pointing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/proofreading.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/proofreading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/questionnaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/questionnaire.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/sentiment.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/sentiment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/stroop.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/stroop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/task-switching.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/task-switching.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/transcription.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/transcription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/consent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/mood.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/mood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/personality.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/personality.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/exp.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exp.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,38 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/full-flow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/mood.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/personality.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="47" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/exp.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="1065">
+              <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -75,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/alertness.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+            <state relative-caret-position="423">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -97,6 +52,7 @@
       <find>on_finish</find>
       <find>progress</find>
       <find>progress_bar_width</find>
+      <find>901</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,18 +78,18 @@
         <option value="$PROJECT_DIR$/static/js/task-switching.js" />
         <option value="$PROJECT_DIR$/templates/default.html" />
         <option value="$PROJECT_DIR$/templates/consent.html" />
-        <option value="$PROJECT_DIR$/static/js/alertness.js" />
         <option value="$PROJECT_DIR$/static/js/counting.js" />
         <option value="$PROJECT_DIR$/static/js/proofreading.js" />
         <option value="$PROJECT_DIR$/static/js/classification.js" />
         <option value="$PROJECT_DIR$/static/js/questionnaire.js" />
         <option value="$PROJECT_DIR$/static/js/sentiment.js" />
         <option value="$PROJECT_DIR$/static/js/transcription.js" />
-        <option value="$PROJECT_DIR$/static/js/personality.js" />
+        <option value="$PROJECT_DIR$/templates/exp.html" />
         <option value="$PROJECT_DIR$/static/js/mood.js" />
         <option value="$PROJECT_DIR$/static/js/emotion.js" />
+        <option value="$PROJECT_DIR$/static/js/personality.js" />
+        <option value="$PROJECT_DIR$/static/js/alertness.js" />
         <option value="$PROJECT_DIR$/static/js/full-flow.js" />
-        <option value="$PROJECT_DIR$/templates/exp.html" />
       </list>
     </option>
   </component>
@@ -383,13 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/task-switching.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="34" lean-forward="true" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -425,76 +374,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/classification.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="89" column="30" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/constants.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/counting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/flanker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/n-back.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="60" column="63" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/pointing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="179" column="59" selection-start-line="179" selection-start-column="41" selection-end-line="179" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/proofreading.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="77" column="40" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/transcription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/task.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/stroop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="99" column="55" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/sentiment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="102" column="44" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -505,45 +391,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/emotion.js">
+    <entry file="file://$PROJECT_DIR$/static/js/stroop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="63" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
+        <state relative-caret-position="1262">
+          <caret line="99" column="55" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/flanker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/task-switching.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="34" lean-forward="true" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/n-back.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="60" column="63" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/mood.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+          <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/emotion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/personality.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="47" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/full-flow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/alertness.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+        <state relative-caret-position="393">
+          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="90">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/pointing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="179" column="59" selection-start-line="179" selection-start-column="41" selection-end-line="179" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/counting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/classification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="30" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/transcription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/proofreading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="40" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/sentiment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1504">
+          <caret line="102" column="44" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/alertness.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/full-flow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
         </state>
       </provider>
     </entry>

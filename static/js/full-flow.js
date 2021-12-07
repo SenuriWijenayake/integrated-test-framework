@@ -19,7 +19,7 @@ timeline.push(welcome_block);
 
 // Setting up tests
 
-var cognitiveTests  = [stroop(),flanker(),taskSwitching(),pointing(),nBack()];
+var cognitiveTests  = [stroop(),flanker(),nBack(),taskSwitching(),pointing()];
 var allTests = [mood(),emotion(),personality(),alertness(),cognitiveTests];
 
 // Populate timeline with tests
@@ -62,7 +62,7 @@ for (let t in randomIndex){
 }
 
 // Setting up tasks
-var crowdsourcingTasks = [proofreading(),sentiment(),counting(),classification(),transcription()];
+var crowdsourcingTasks = [counting(),classification(),sentiment(),proofreading(),transcription()];
 
 randomIndex = jsPsych.randomization.shuffle([0,1,2,3,4]);
 
@@ -117,10 +117,6 @@ jsPsych.init({
                 case 'sentiment':
                 case 'counting':
                 case 'classification':
-                case 'alertness':
-                case 'personality':
-                case 'mood':
-                case 'emotion':
                 case 'proofreading':{
                     const trialData = {
                         rt: data.rt,
@@ -135,6 +131,9 @@ jsPsych.init({
                     break;
                 }
                 case 'questionnaire':
+                case 'personality':
+                case 'mood':
+                case 'emotion':
                 case 'transcription':{
                     const trialData = {
                         rt: data.rt,
@@ -171,6 +170,19 @@ jsPsych.init({
                     };
                     psiturk.recordTrialData(trialData);
                     console.log(trialData);
+                    break;
+                }
+                case 'alertness': {
+                    const trialData = {
+                        rt: data.rt,
+                        unique_trial_id: data.unique_trial_id,
+                        trial_category: data.trial_category,
+                        trial_index: data.trial_index,
+                        response: data.response,
+                        falseStarts: data.falseStarts
+                    };
+                    // console.log(trialData);
+                    psiturk.recordTrialData(trialData);
                     break;
                 }
             }

@@ -10,12 +10,14 @@ function alertness() {
     var max_count = 998;
     var c = 0;
     var pause = false;
+    var false_starts = 0;
 
     var counter;
 
     $(window).keypress(function(e) {
         if (e.which === 32) {
             pause = true;
+            false_starts += 1;
         }
     });
 
@@ -24,7 +26,7 @@ function alertness() {
         stimulus: "<p><strong>Instructions</strong></p>" +
         "<p>In this task, numbers will appear on the screen at random intervals.</p><p>Press SPACE bar as soon as you see numbers on the screen.</p>",
         choices: ['Continue'],
-        data: {trial_category: 'blank_trial', unique_trial_id: 9101},
+        data: {trial_category: 'blank_trial', unique_trial_id: 990},
         post_trial_gap: random_duration,
     };
 
@@ -35,7 +37,7 @@ function alertness() {
             type: 'html-keyboard-response',
             stimulus: '<div id="timer" style="font-size:250%;color:red";></div><br><p>Press SPACE bar to stop the counter.</p>',
             choices: ['Space'],
-            data: {trial_category: 'alertness', unique_trial_id: 9102+i},
+            data: {trial_category: 'alertness', unique_trial_id: 901+i},
             post_trial_gap: random_duration,
             on_load: function() {
                 pause = false;
@@ -54,7 +56,10 @@ function alertness() {
             },
             on_finish: function (data) {
                 data.response = c;
+                data.falseStarts = false_starts - 1;
+
                 c = 0;
+                false_starts = 0;
                 clearInterval(counter);
             }
         });

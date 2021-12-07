@@ -8,7 +8,7 @@ function personality(){
         "<p>The survey includes 10 statements that describe different personality traits of individuals.</p>" +
          "<p>Indicate how well each statement describes your personality on a 5-point scale - as objectively as possible.</p>",
         choices: ['Continue'],
-        data: {trial_category: 'instructions', unique_trial_id: 3100}
+        data: {trial_category: 'instructions', unique_trial_id: 890}
     };
 
     timeline.push(instructions_block);
@@ -38,7 +38,7 @@ function personality(){
         {prompt: "I see myself as someone has an active imagination.", labels: likert_scale, required: true}
       ],
       button_label: 'Next',
-      data: {trial_category:'personality',unique_trial_id:3101},
+      data: {trial_category:'personality',unique_trial_id:801},
       on_finish: function (data) {
         console.log(data);
         data.response = JSON.parse(data.responses);
