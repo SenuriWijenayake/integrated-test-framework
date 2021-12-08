@@ -39,6 +39,7 @@ function alertness() {
             choices: ['Space'],
             data: {trial_category: 'alertness', unique_trial_id: 901+i},
             post_trial_gap: random_duration,
+            trial_duration:10000,
             on_load: function() {
                 pause = false;
                 c = 0;
