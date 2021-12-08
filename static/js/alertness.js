@@ -32,7 +32,7 @@ function alertness() {
 
     timeline.push(instructions_block);
 
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 10; i++) {
         timeline.push({
             type: 'html-keyboard-response',
             stimulus: '<div id="timer" style="font-size:250%;color:red";></div><br><p>Press SPACE bar to stop the counter.</p>',
