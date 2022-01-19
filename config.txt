@@ -17,7 +17,7 @@ database_url = sqlite:///participants.db
 table_name = demo
 
 [Server Parameters]
-host = https://mysterious-lowlands-35896.herokuapp.com
+host = mysterious-lowlands-35896.herokuapp.com
 port = 8080
 cutoff_time = 60
 logfile = server.log
