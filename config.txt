@@ -13,8 +13,8 @@ browser_exclude_rule = MSIE, mobile, tablet
 allow_repeats = false
 
 [Database Parameters]
-database_url = sqlite:///participants.db
-table_name = demo
+database_url = postgres://ztxwmfznzwckjd:3f5d94d4bf98889549239222bfacf5c0f8c490de593eaf4151276f4ceb7eeba5@ec2-67-202-63-147.compute-1.amazonaws.com:5432/d7aledtu0lhdde
+table_name = data
 
 [Server Parameters]
 host = https://mysterious-lowlands-35896.herokuapp.com

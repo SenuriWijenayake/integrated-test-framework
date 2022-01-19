@@ -1,3 +1,2 @@
 PsiTurk
 psycopg2-binary
-gunicorn
