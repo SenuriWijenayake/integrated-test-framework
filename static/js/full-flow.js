@@ -8,7 +8,7 @@ var welcome_block = {
     type: "html-button-response",
     stimulus: "<p><strong>Welcome</strong></p>" +
     "<p>You will complete 13 tasks. This includes a series of tests that assess your cognitive skills,</p> " +
-    "<p>personality, alertness, mood and emotion, followed by a set of crowdsourcing tasks.</p>" +
+    "<p>personality, alertness and mood, followed by a set of crowdsourcing tasks.</p>" +
     "<p>Please ensure that you complete all 13 tasks in a single sitting to receive payment. </p>" +
     "<p><strong>You will not receive any payment if you do not complete all tasks.</strong></p>" +
     "<p><strong>Read the instructions carefully </strong>before starting each task. </p> <p>Instructions will not be repeated.</p> ",
