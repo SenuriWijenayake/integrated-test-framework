@@ -20,10 +20,10 @@ timeline.push(welcome_block);
 // Setting up tests
 
 var cognitiveTests  = [stroop(),flanker(),nBack(),taskSwitching(),pointing()];
-var allTests = [mood(),personality(),alertness(),cognitiveTests];
+var allTests = [comprehension()];
 
 // Populate timeline with tests
-var randomIndex = jsPsych.randomization.shuffle([0,1,2,3]);
+var randomIndex = jsPsych.randomization.shuffle([0]);
 var taskNumber = 1;
 
 for (let t in randomIndex){
@@ -134,6 +134,7 @@ jsPsych.init({
                 case 'personality':
                 case 'mood':
                 case 'emotion':
+                case 'comprehension':
                 case 'transcription':{
                     const trialData = {
                         rt: data.rt,
