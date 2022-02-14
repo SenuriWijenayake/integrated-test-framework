@@ -20,7 +20,7 @@ timeline.push(welcome_block);
 // Setting up tests
 
 var cognitiveTests  = [stroop(),flanker(),nBack(),taskSwitching(),pointing()];
-var allTests = [comprehension()];
+var allTests = [entity()];
 
 // Populate timeline with tests
 var randomIndex = jsPsych.randomization.shuffle([0]);
