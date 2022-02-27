@@ -20,7 +20,7 @@ timeline.push(welcome_block);
 // Setting up tests
 
 var cognitiveTests  = [stroop(),flanker(),nBack(),taskSwitching(),pointing()];
-var allTests = [entity()];
+var allTests = [boundingBox()];
 
 // Populate timeline with tests
 var randomIndex = jsPsych.randomization.shuffle([0]);
@@ -36,10 +36,7 @@ for (let t in randomIndex){
                 type: "html-button-response",
                 stimulus: "<p><strong>Task "+ taskNumber +
                 "</strong></p><p>&nbsp;</p>",
-                choices: ['Continue'],
-                on_load: function () {
-//                    jsPsych.setProgressBar((t*1)*0.1+0.5);
-                }
+                choices: ['Continue']
             });
             timeline = timeline.concat(cognitiveTests[newRandomIndex[i]]);
             taskNumber = taskNumber + 1;
