@@ -3,7 +3,7 @@
 <crowd-form>
   <crowd-bounding-box
     name="annotatedResult"
-    src="https://images.ctfassets.net/82d3r48zq721/45liwTLsDMSJt4N22RqrHX/cd992f88ca8737f95b085212906d6d86/Can-cats-and-dogs-get-coronavirus_resized.jpg?w=1000&h=677&q=50&fm=webp"
+    src= "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dogs-and-cats-snuggle-together-royalty-free-image-578593548-1553616085.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*"
     header="Draw bounding boxes around all the cats and dogs in this image"
     labels="['Cat', 'Dog']"
   >
@@ -29,13 +29,7 @@
     <short-instructions>
       Draw boxes around the requested target of interest.
     </short-instructions>
+
+    <input type="button" id="aws-submit" style="visibility:hidden;"/>
   </crowd-bounding-box>
 </crowd-form>
-
-<script>
-    document.querySelector('crowd-form').onsubmit = function(e) {
-      e.preventDefault();
-      const boundingBoxes = document.querySelector('crowd-bounding-box').value.boundingBoxes;
-      console.log(boundingBoxes);
-    }
-</script>

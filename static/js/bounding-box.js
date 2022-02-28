@@ -29,6 +29,14 @@ function boundingBox(){
             script.type = 'text/javascript';
             script.src = '/static/js/crowd-html-scripts.js';
             head.appendChild(script);
+        },
+        cont_btn: "aws-submit",
+        check_fn: function(){
+            var data = JSON.parse(sessionStorage.getItem("boundingBox"));
+            return true;
+        },
+        on_finish: function(data){
+            data.tags = JSON.parse(sessionStorage.getItem("boundingBox"));
         }
     });
 

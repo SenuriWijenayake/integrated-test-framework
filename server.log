@@ -1791,3 +1791,75 @@ OSError: [Errno 57] Socket is not connected
 2022-01-19 17:56:23,002 Scheduler started
 2022-01-19 17:56:23,066 Scheduler started
 2022-01-19 17:56:23,142 Scheduler started
+2022-02-27 17:48:04,688 Scheduler started
+2022-02-27 17:48:04,994 Scheduler started
+2022-02-27 17:48:05,243 Scheduler started
+2022-02-27 17:48:05,379 Scheduler started
+2022-02-27 17:48:05,445 Scheduler started
+2022-02-27 17:48:05,494 Scheduler started
+2022-02-27 17:48:05,533 Scheduler started
+2022-02-27 17:48:05,537 Scheduler started
+2022-02-27 17:48:05,544 Scheduler started
+2022-02-27 20:02:34,680 Scheduler started
+2022-02-27 20:02:35,140 Scheduler started
+2022-02-27 20:02:35,230 Scheduler started
+2022-02-27 20:02:35,271 Scheduler started
+2022-02-27 20:02:35,450 Scheduler started
+2022-02-27 20:02:35,486 Scheduler started
+2022-02-27 20:02:35,509 Scheduler started
+2022-02-27 20:02:35,530 Scheduler started
+2022-02-27 20:02:35,559 Scheduler started
+2022-02-27 20:21:02,770 Scheduler started
+2022-02-27 20:21:03,316 Scheduler started
+2022-02-27 20:21:04,005 Scheduler started
+2022-02-27 20:21:04,139 Scheduler started
+2022-02-27 20:21:04,267 Scheduler started
+2022-02-27 20:21:04,309 Scheduler started
+2022-02-27 20:21:04,373 Scheduler started
+2022-02-27 20:21:04,390 Scheduler started
+2022-02-27 20:21:04,474 Scheduler started
+[2022-02-27 23:52:22 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:24623)
+2022-02-27 23:52:26,934 Scheduler started
+[2022-02-27 23:57:58 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:24624)
+2022-02-27 23:57:59,159 Scheduler started
+[2022-02-28 00:03:30 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:24625)
+2022-02-28 00:03:31,679 Scheduler started
+[2022-02-28 01:47:19 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:24626)
+2022-02-28 01:47:23,831 Scheduler started
+[2022-02-28 07:12:37 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:24627)
+2022-02-28 07:12:40,022 Scheduler started
+[2022-02-28 08:30:05 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:26975)
+2022-02-28 08:30:08,707 Scheduler started
+[2022-02-28 08:35:49 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:24628)
+[2022-02-28 08:35:49 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:26893)
+[2022-02-28 08:35:49 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:26901)
+[2022-02-28 08:35:49 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:26980)
+2022-02-28 08:35:55,719 Scheduler started
+2022-02-28 08:35:55,902 Scheduler started
+2022-02-28 08:35:55,954 Scheduler started
+2022-02-28 08:35:56,021 Scheduler started
+[2022-02-28 10:36:40 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:24629)
+2022-02-28 10:36:41,522 Scheduler started
+[2022-02-28 12:36:45 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:24630)
+2022-02-28 12:36:46,464 Scheduler started
+[2022-02-28 14:36:50 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:24631)
+2022-02-28 14:36:51,221 Scheduler started
+[2022-02-28 16:36:55 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:26897)
+2022-02-28 16:36:57,288 Scheduler started
+[2022-02-28 18:37:00 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:26915)
+[2022-02-28 18:37:00 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:27043)
+[2022-02-28 18:37:00 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:27060)
+2022-02-28 18:37:05,664 Scheduler started
+2022-02-28 18:37:05,717 Scheduler started
+2022-02-28 18:37:06,168 Scheduler started
+[2022-02-28 19:06:26 +1100] [24621] [CRITICAL] WORKER TIMEOUT (pid:26994)
+2022-02-28 19:06:33,331 Scheduler started
+2022-02-28 19:06:57,175 Scheduler started
+2022-02-28 19:06:57,823 Scheduler started
+2022-02-28 19:06:58,008 Scheduler started
+2022-02-28 19:06:58,084 Scheduler started
+2022-02-28 19:06:58,130 Scheduler started
+2022-02-28 19:06:58,134 Scheduler started
+2022-02-28 19:06:58,189 Scheduler started
+2022-02-28 19:06:58,222 Scheduler started
+2022-02-28 19:06:58,231 Scheduler started
