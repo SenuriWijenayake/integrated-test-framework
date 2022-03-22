@@ -1,0 +1,34 @@
+<crowd-form>
+  <crowd-bounding-box
+    name="annotatedResult"
+    src= "https://images.theconversation.com/files/385014/original/file-20210218-17-1fx1dvr.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop"
+    header="Draw bounding boxes around all the cats and dogs in this image"
+    labels="['Cat', 'Dog']"
+  >
+    <full-instructions header="Bounding Box Instructions" >
+      <p>Use the bounding box tool to draw boxes around the requested target of interest:</p>
+      <ol>
+        <li>Draw a rectangle using your mouse over each instance of the target.</li>
+        <li>Make sure the box does not cut into the target, leave a 2 - 3 pixel margin</li>
+        <li>
+          When targets are overlapping, draw a box around each object,
+          include all contiguous parts of the target in the box.
+          Do not include parts that are completely overlapped by another object.
+        </li>
+        <li>
+          Do not include parts of the target that cannot be seen,
+          even though you think you can interpolate the whole shape of the target.
+        </li>
+        <li>Avoid shadows, they're not considered as a part of the target.</li>
+        <li>If the target goes off the screen, label up to the edge of the image.</li>
+      </ol>
+    </full-instructions>
+
+    <short-instructions>
+      Draw boxes around the requested target of interest.
+    </short-instructions>
+
+    <input type="button" id="aws-submit" style="visibility:hidden;"/>
+  </crowd-bounding-box>
+</crowd-form>
+
