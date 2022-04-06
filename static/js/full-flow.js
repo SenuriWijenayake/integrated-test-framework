@@ -20,10 +20,10 @@ timeline.push(welcome_block);
 // Setting up tests
 
 var cognitiveTests  = [stroop(),flanker(),nBack(),taskSwitching(),pointing()];
-var allTests = [boundingBox()];
+var allTests = [entityAnnotation(), boundingBox()];
 
 // Populate timeline with tests
-var randomIndex = jsPsych.randomization.shuffle([0]);
+var randomIndex = jsPsych.randomization.shuffle([0,1]);
 var taskNumber = 1;
 
 for (let t in randomIndex){
