@@ -20,10 +20,10 @@ timeline.push(welcome_block);
 // Setting up tests
 
 var cognitiveTests  = [stroop(),flanker(),nBack(),taskSwitching(),pointing()];
-var allTests = [entityAnnotation(), boundingBox()];
+var allTests = [comprehension()];
 
 // Populate timeline with tests
-var randomIndex = jsPsych.randomization.shuffle([0,1]);
+var randomIndex = jsPsych.randomization.shuffle([0]);
 var taskNumber = 1;
 
 for (let t in randomIndex){
@@ -36,7 +36,10 @@ for (let t in randomIndex){
                 type: "html-button-response",
                 stimulus: "<p><strong>Task "+ taskNumber +
                 "</strong></p><p>&nbsp;</p>",
-                choices: ['Continue']
+                choices: ['Continue'],
+                on_load: function () {
+                    window.scroll(0,0);
+                }
             });
             timeline = timeline.concat(cognitiveTests[newRandomIndex[i]]);
             taskNumber = taskNumber + 1;
@@ -50,7 +53,7 @@ for (let t in randomIndex){
             "</strong></p><p>&nbsp;</p>",
             choices: ['Continue'],
             on_load: function () {
-//                jsPsych.setProgressBar((t*1)*0.1+0.5);
+                window.scroll(0,0);
             }
         });
         timeline = timeline.concat(allTests[randomIndex[t]]);
@@ -59,48 +62,48 @@ for (let t in randomIndex){
 }
 
 // Setting up tasks
-var crowdsourcingTasks = [counting(),classification(),sentiment(),proofreading(),transcription()];
-
-randomIndex = jsPsych.randomization.shuffle([0,1,2,3,4]);
-
-for (let t in randomIndex){
-    var taskNumber = t*1+9;
-    timeline.push({
-        type: "html-button-response",
-        stimulus: "<p><strong>Task "+ taskNumber +
-        "</strong></p><p>&nbsp;</p>",
-        choices: ['Continue'],
-        on_load: function () {
-            // console.log((t*1-1)*10);
-//            jsPsych.setProgressBar((t*1)*0.1+0.5);
-        }
-    });
-    timeline = timeline.concat(crowdsourcingTasks[randomIndex[t]]);
-}
-
-timeline.push({
-    type: "html-button-response",
-    stimulus: "<p><strong>You have completed all the tasks." +
-    "</strong></p><p>Click the button below to answer a short questionnaire on your context and demographics.</p>",
-    choices: ['Continue'],
-    button_htm: ['<button class="jspsych-btn">%choice%</button>'],
-    on_load: function () {
-//        jsPsych.setProgressBar(0.98);
-    }
-});
-
-timeline = timeline.concat(questionnaire());
-
-timeline.push({
-    type: "html-button-response",
-    stimulus: "<p><strong>Thank You!" +
-    "</strong></p><p>Click the button below to return to Mechanical Turk to submit your answers.</p>",
-    choices: ['Complete'],
-    button_htm: ['<button class="jspsych-btn">%choice%</button>'],
-    on_load: function () {
-        jsPsych.setProgressBar(1);
-    }
-});
+//var crowdsourcingTasks = [counting(),classification(),sentiment(),proofreading(),transcription()];
+//
+//randomIndex = jsPsych.randomization.shuffle([0,1,2,3,4]);
+//
+//for (let t in randomIndex){
+//    var taskNumber = t*1+9;
+//    timeline.push({
+//        type: "html-button-response",
+//        stimulus: "<p><strong>Task "+ taskNumber +
+//        "</strong></p><p>&nbsp;</p>",
+//        choices: ['Continue'],
+//        on_load: function () {
+//            // console.log((t*1-1)*10);
+////            jsPsych.setProgressBar((t*1)*0.1+0.5);
+//        }
+//    });
+//    timeline = timeline.concat(crowdsourcingTasks[randomIndex[t]]);
+//}
+//
+//timeline.push({
+//    type: "html-button-response",
+//    stimulus: "<p><strong>You have completed all the tasks." +
+//    "</strong></p><p>Click the button below to answer a short questionnaire on your context and demographics.</p>",
+//    choices: ['Continue'],
+//    button_htm: ['<button class="jspsych-btn">%choice%</button>'],
+//    on_load: function () {
+////        jsPsych.setProgressBar(0.98);
+//    }
+//});
+//
+//timeline = timeline.concat(questionnaire());
+//
+//timeline.push({
+//    type: "html-button-response",
+//    stimulus: "<p><strong>Thank You!" +
+//    "</strong></p><p>Click the button below to return to Mechanical Turk to submit your answers.</p>",
+//    choices: ['Complete'],
+//    button_htm: ['<button class="jspsych-btn">%choice%</button>'],
+//    on_load: function () {
+//        jsPsych.setProgressBar(1);
+//    }
+//});
 
 jsPsych.init({
     timeline: timeline,
@@ -140,7 +143,6 @@ jsPsych.init({
                         trial_index: data.trial_index,
                         response: data.response
                     };
-                    // console.log(trialData);
                     psiturk.recordTrialData(trialData);
                     break;
                 }
@@ -179,7 +181,28 @@ jsPsych.init({
                         response: data.response,
                         falseStarts: data.falseStarts
                     };
-                    // console.log(trialData);
+                    psiturk.recordTrialData(trialData);
+                    break;
+                }
+                 case 'entity-recognition':{
+                    const trialData = {
+                        rt: data.rt,
+                        unique_trial_id: data.unique_trial_id,
+                        trial_category: data.trial_category,
+                        trial_index: data.trial_index,
+                        response: data.response
+                    };
+                    psiturk.recordTrialData(trialData);
+                    break;
+                }
+                 case 'bounding-box':{
+                    const trialData = {
+                        rt: data.rt,
+                        unique_trial_id: data.unique_trial_id,
+                        trial_category: data.trial_category,
+                        trial_index: data.trial_index,
+                        response: data.response
+                    };
                     psiturk.recordTrialData(trialData);
                     break;
                 }

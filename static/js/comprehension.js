@@ -83,7 +83,6 @@ function comprehension(){
             }
         }
         data.response.score = score;
-        console.log(data.response);
       }
     });
 
