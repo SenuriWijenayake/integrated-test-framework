@@ -24,7 +24,8 @@ function alertness() {
     var instructions_block = {
         type: "html-button-response",
         stimulus: "<p><strong>Instructions</strong></p>" +
-        "<p>In this task, numbers will appear on the screen at random intervals.</p><p>Press SPACE bar as soon as you see numbers on the screen.</p>",
+        "<p>In this task, numbers will appear on the screen at random intervals.</p>" +
+        "<p>Press SPACE bar as soon as you see numbers on the screen. Please be advised that pressing the SPACE bar without seeing numbers on the screen (a false start) <B> will add a penalty </b>to your final score in this test.</p>",
         choices: ['Continue'],
         data: {trial_category: 'blank_trial', unique_trial_id: 990},
         post_trial_gap: random_duration,
@@ -32,13 +33,13 @@ function alertness() {
 
     timeline.push(instructions_block);
 
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 5; i++) {
         timeline.push({
             type: 'html-keyboard-response',
             stimulus: '<div id="timer" style="font-size:250%;color:red";></div><br><p>Press SPACE bar to stop the counter.</p>',
             choices: ['Space'],
             data: {trial_category: 'alertness', unique_trial_id: 901+i},
-            post_trial_gap: random_duration,
+            post_trial_gap: (i == 4 ? 1000 : random_duration),
             trial_duration:10000,
             on_load: function() {
                 pause = false;

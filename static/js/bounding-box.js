@@ -27,7 +27,7 @@ function boundingBox(){
 
     timeline.push(instructions_block);
 
-    var randomIndex = jsPsych.randomization.shuffle([2,3]);
+    var randomIndex = jsPsych.randomization.shuffle([1,2,3]);
 
     for (let i in randomIndex){
         var index = randomIndex[i];
