@@ -1,1 +1,1 @@
-web: python herokuapp.py
+psiturk server on
