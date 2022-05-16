@@ -1,1 +1,1 @@
-psiturk server on
+web: psiturk server on
