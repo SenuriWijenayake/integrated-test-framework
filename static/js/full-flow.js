@@ -22,7 +22,7 @@ timeline.push(welcome_block);
 var cognitiveTests  = [stroop(), flanker(), nBack(), taskSwitching(), pointing()];
 var allTests = [boundingBox()];
 
-// alertness(), comprehension(), mood(), personality()
+//alertness(), comprehension(), mood(), personality()
 
 // Populate timeline with tests
 var randomIndex = jsPsych.randomization.shuffle([0]);
@@ -203,6 +203,9 @@ jsPsych.init({
                     const trialData = {
                         rt: data.rt,
                         unique_trial_id: data.unique_trial_id,
+                        image_id : data.image_id,
+                        num_faces : data.num_faces,
+                        ground_truth : data.ground_truth,
                         trial_category: data.trial_category,
                         trial_index: data.trial_index,
                         response: data.response

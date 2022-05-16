@@ -1,15 +1,15 @@
 <crowd-form>
   <crowd-bounding-box
     name="annotatedResult"
-    src= "../static/images/boundingBox/2.jpg"
-    header="Draw bounding boxes around all the cats and dogs in this image"
-    labels="['Cat', 'Dog']"
+    src= "../static/images/boundingBox/4d18df63ebbcdc01.jpg"
+    header="Draw bounding boxes around all human faces in this image"
+    labels="['Human face']"
   >
-    <full-instructions header="Bounding Box Instructions" >
-      <p>Use the bounding box tool to draw boxes around the requested target of interest:</p>
+    <full-instructions header="Instructions" >
+      <p>Use the bounding box tool to draw boxes around human faces in this image:</p>
       <ol>
         <li>Draw a rectangle using your mouse over each instance of the target.</li>
-        <li>Make sure the box does not cut into the target, leave a 2 - 3 pixel margin</li>
+        <li>Make sure the box does not cut into the target, leave a 2 - 3 pixel margin.</li>
         <li>
           When targets are overlapping, draw a box around each object,
           include all contiguous parts of the target in the box.
@@ -25,7 +25,7 @@
     </full-instructions>
 
     <short-instructions>
-      Draw boxes around the requested target of interest.
+      Draw boxes around all human faces in this image.
     </short-instructions>
 
     <input type="button" id="aws-submit" style="visibility:hidden;"/>
