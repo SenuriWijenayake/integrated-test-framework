@@ -17,15 +17,15 @@ database_url = sqlite:///participants.db
 table_name = data
 
 [Server Parameters]
-host = localhost
+host = 0.0.0.0
 port = 8080
-cutoff_time = 60
+cutoff_time = 30
 logfile = server.log
 loglevel = 2
 debug = true
-login_username = examplename
-login_pw = examplepassword
-threads = auto
+login_username = user
+login_pw = pw
+threads = 2
 secret_key = 'this is my secret key which is hard to guess, i should change this'
 #certfile = <path_to.crt>
 #keyfile = <path_to.key>
