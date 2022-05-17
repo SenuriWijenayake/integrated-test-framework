@@ -4,7 +4,14 @@ function entityAnnotation(){
 
     var instructions_block = {
         type: "html-button-response",
-        stimulus: "<p><strong>Instructions for entity annotation</strong></p>",
+        stimulus: "<p><strong>Instructions</strong></p>" +
+        "<p>In this task you will read and label several text extracts.</p>" +
+        "<ol style='text-align:left; padding-left: 10%'><li>Read the text carefully.</li>" +
+        "<li>Highlight words, phrases, or sections of the text.</li>" +
+        "<li>Choose the label that best matches what you have highlighted.</li>" +
+        "<li>To change a label, choose highlighted text and select a new label</li>" +
+        "<li>To remove a label from highlighted text, choose the X next to the abbreviated label name on the highlighted text.</li>" +
+        "<li>You can select all of a previously highlighted text, but not a portion of it.</li></ol>",
         choices: ['Continue'],
         data: {trial_category: 'instructions', unique_trial_id: 1190},
         on_load: function () {
