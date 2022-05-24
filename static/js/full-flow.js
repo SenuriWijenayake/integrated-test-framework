@@ -194,6 +194,7 @@ jsPsych.init({
                         unique_trial_id: data.unique_trial_id,
                         trial_category: data.trial_category,
                         task_id: data.task_id,
+                        num_entities: data.num_entities,
                         ground_truth : data.ground_truth,
                         trial_index: data.trial_index,
                         response: data.response
