@@ -44,7 +44,10 @@ function entityAnnotation(){
             on_load : function(){
                 window.scroll(0,0);
             },
-            data: {trial_category:'entity-recognition', unique_trial_id:1100 + index},
+            data: {trial_category:'entity-recognition',
+                   unique_trial_id: 1100 + index,
+                   task_id: index,
+                   ground_truth: ""},
             check_fn: function(){
                 var data = JSON.parse(sessionStorage.getItem("entityAnnotation"));
                 return true;

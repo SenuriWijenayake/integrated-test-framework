@@ -1,8 +1,15 @@
 <crowd-entity-annotation
   name="crowd-entity-annotation"
   header="Highlight parts of the text below"
-  labels="[{'label': 'person', 'shortDisplayName': 'per', 'fullDisplayName': 'Person'}, {'label': 'date', 'shortDisplayName': 'dat', 'fullDisplayName': 'Date'}, {'label': 'company', 'shortDisplayName': 'com', 'fullDisplayName': 'Company'}]"
-  text="Amazon SageMaker Ground Truth helps you build highly accurate training datasets for machine learning quickly."
+  labels="[{'label': 'person', 'shortDisplayName': 'per', 'fullDisplayName': 'Person'}, {'label': 'location', 'shortDisplayName': 'loc', 'fullDisplayName': 'Location'}, {'label': 'organisation', 'shortDisplayName': 'org', 'fullDisplayName': 'Organisation'}]"
+  text="Dutch forward Reggie Blinker had his indefinite suspension lifted by FIFA on Friday and was set to make his Sheffield Wednesday comeback against Liverpool on Saturday.
+
+Blinker missed his club's last two games after FIFA slapped a worldwide ban on him for appearing to sign contracts for both Wednesday and Udinese while he was playing for Feyenoord.
+
+FIFA's players' status committee, meeting in Barcelona, decided that although the Udinese document was basically valid, it could not be legally protected.
+
+The committee said the Italian club had violated regulations by failing to inform Feyenoord, with whom the player was under contract. Blinker was fined 75,000 Swiss francs ($ 57,600) for failing to inform the Engllsh club of his previous commitment to Udinese.
+"
 >
   <full-instructions header="Named entity recognition instructions">
     <ol>
@@ -20,13 +27,6 @@
   </short-instructions>
 
     <div id="additionalQuestions" style="margin-top: 20px">
-      <h3>
-        What is the overall subject of this text?
-      </h3>
-      <crowd-radio-group>
-        <crowd-radio-button name="tech" value="tech">Technology</crowd-radio-button>
-        <crowd-radio-button name="politics" value="politics">Politics</crowd-radio-button>
-      </crowd-radio-group>
     </div>
   <input type="button" id="aws-submit" style="visibility:hidden;"/>
 </crowd-entity-annotation>
