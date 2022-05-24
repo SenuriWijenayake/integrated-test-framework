@@ -13,7 +13,7 @@ function boundingBox(){
         "<li>Avoid shadows, they are not considered as a part of the target.</li>" +
         "<li>If the target goes off the screen, label up to the edge of the image.</li></ol>",
         choices: ['Continue'],
-        data: {trial_category: 'instructions', unique_trial_id: 1290},
+        data: {trial_category: 'instructions', unique_trial_id: 1090},
         on_load: function () {
             var head = document.getElementsByTagName('head')[0];
             var script = document.createElement('script');
@@ -108,7 +108,7 @@ function boundingBox(){
             on_load : function(){
                 window.scroll(0,0);
             },
-            data: { trial_category:'bounding-box', unique_trial_id: 1200 + index,
+            data: { trial_category:'bounding-box', unique_trial_id: 1000 + index,
                     image_id: randomIndex[i].image_id,
                     ground_truth: randomIndex[i].annotations,
                     num_faces: randomIndex[i].num_faces},

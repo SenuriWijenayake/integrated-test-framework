@@ -9,7 +9,7 @@ function transcription() {
         "<p>Each image contain a line or two of writings. You need to type the exact text shown in the image. <br>Some are incomplete sentences.</p>" +
         "<p>Next, you will see an example.</p>",
         choices: ['Continue'],
-        data: {trial_category: 'instructions', unique_trial_id: 1590}
+        data: {trial_category: 'instructions', unique_trial_id: 1490}
         // on_finish: function(){
         //     psiturk.finishInstructions();
         // }
@@ -24,7 +24,7 @@ function transcription() {
         '<textarea cols="100" rows="2" name="#jspsych-survey-text-response"  disabled>' +
         'The several subjects, to which I have now referred, open a wide range to your</textarea>',
         choices: ['Start'],
-        data: {trial_category: 'example', unique_trial_id: 1591}
+        data: {trial_category: 'example', unique_trial_id: 1491}
     };
 
     timeline.push(example_block);
@@ -35,7 +35,7 @@ function transcription() {
     for (var i=1;i<=12;i++){
         trials.push({
             image: i,
-            data: { trial_category: 'transcription', unique_trial_id: 1500+i }
+            data: { trial_category: 'transcription', unique_trial_id: 1400+i }
         })
     }
 

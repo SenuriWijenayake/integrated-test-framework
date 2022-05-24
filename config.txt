@@ -1,20 +1,21 @@
 [HIT Configuration]
 title = Developing a Test Suite to Measure Crowdworker Performance
-description = The HIT contains a series of tests to determine measure crowd worker performance in typical crowdsourcing tasks.
-amt_keywords = Cognitive
-lifetime = 24
+description = The HIT contains a series of tests to determine crowd worker performance in typical crowdsourcing tasks.
+amt_keywords = Cognitive, Comprehension, Bounding box, Entity Recognition, Mood, Personality, Alertness, Classification, Sentiment Analysis, Transcription
+lifetime = 48
 us_only = true
 approve_requirement = 95
-contact_email_on_error = senuri.wijenayake@sydney.edu.au
-ad_group = Study on Cognitive Skills of Crowdworkers
-psiturk_keywords = Cognitive
+number_hits_approved = 1000
+contact_email_on_error = crowd.group.mturk@gmail.com
+ad_group = Developing a Test Suite to Measure Crowdworker Performance
+psiturk_keywords = Cognitive, Comprehension, Bounding box, Entity Recognition, Mood, Personality, Alertness, Classification, Sentiment Analysis, Transcription
 organization_name = The University of Melbourne
 browser_exclude_rule = MSIE, mobile, tablet
 allow_repeats = false
 
 [Database Parameters]
 database_url = sqlite:///participants.db
-table_name = data
+assignments_table_name = data
 
 [Server Parameters]
 host = 0.0.0.0
