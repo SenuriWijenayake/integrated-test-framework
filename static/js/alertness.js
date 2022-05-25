@@ -34,12 +34,15 @@ function alertness() {
     timeline.push(instructions_block);
 
     for (var i = 0; i < 10; i++) {
+
+        var trial_gap = (i == 9 ? 1000 : random_duration());
+
         timeline.push({
             type: 'html-keyboard-response',
             stimulus: '<div id="timer" style="font-size:250%;color:red";></div><br><p>Press SPACE bar to stop the counter.</p>',
             choices: ['Space'],
             data: {trial_category: 'alertness', unique_trial_id: 901+i},
-            post_trial_gap: (i == 9 ? 1000 : random_duration),
+            post_trial_gap: trial_gap,
             trial_duration:10000,
             on_load: function() {
                 pause = false;
@@ -59,7 +62,7 @@ function alertness() {
             on_finish: function (data) {
                 data.response = c;
                 data.false_starts = false_starts - 1;
-                data.post_trial_gap = (i == 9 ? 1000 : random_duration);
+                data.post_trial_gap = trial_gap;
 
                 c = 0;
                 false_starts = 0;
