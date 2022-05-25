@@ -178,7 +178,8 @@ jsPsych.init({
                         trial_category: data.trial_category,
                         trial_index: data.trial_index,
                         response: data.response,
-                        falseStarts: data.falseStarts
+                        postTrialGap: data.post_trial_gap,
+                        falseStarts: data.false_starts
                     };
                     psiturk.recordTrialData(trialData);
                     break;

@@ -39,7 +39,7 @@ function alertness() {
             stimulus: '<div id="timer" style="font-size:250%;color:red";></div><br><p>Press SPACE bar to stop the counter.</p>',
             choices: ['Space'],
             data: {trial_category: 'alertness', unique_trial_id: 901+i},
-            post_trial_gap: (i == 4 ? 1000 : random_duration),
+            post_trial_gap: (i == 9 ? 1000 : random_duration),
             trial_duration:10000,
             on_load: function() {
                 pause = false;
@@ -58,7 +58,8 @@ function alertness() {
             },
             on_finish: function (data) {
                 data.response = c;
-                data.falseStarts = false_starts - 1;
+                data.false_starts = false_starts - 1;
+                data.post_trial_gap = (i == 9 ? 1000 : random_duration);
 
                 c = 0;
                 false_starts = 0;

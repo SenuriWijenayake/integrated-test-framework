@@ -6,7 +6,7 @@ function questionnaire(){
         type: 'html-text',
         prompt: 'How old are you?',
         inputhtml: '<input type="number" min="1" max="999" name="#jspsych-survey-text-response" autofocus />',
-        data: {trial_category: 'questionnaire',unique_trial_id:2101},
+        data: {trial_category: 'questionnaire',unique_trial_id:1501},
         required: true
     });
 
@@ -14,7 +14,7 @@ function questionnaire(){
         type: 'html-text',
         prompt: 'To which gender identity do you most identify?',
         inputhtml: '<input type="text" name="#jspsych-survey-text-response-gender" autofocus />',
-        data: {trial_category: 'questionnaire',unique_trial_id:2102},
+        data: {trial_category: 'questionnaire',unique_trial_id:1502},
         required: true
     });
 
@@ -45,7 +45,7 @@ function questionnaire(){
         }],
 
         button_label: 'Next',
-        data: { trial_category:'questionnaire',unique_trial_id:2103},
+        data: { trial_category:'questionnaire',unique_trial_id:1503},
         on_finish: function (data) {
             data.response = JSON.parse(data.responses).Q0
         }
@@ -57,13 +57,13 @@ function questionnaire(){
         type: 'survey-multi-choice',
         preamble: "",
         questions: [{
-            prompt: "What device did you use to complete this task?",
+            prompt: "What device did you use to complete this HIT?",
             options: ['Desktop','Laptop','Tablet'],
             horizontal: false,
             required: true
         }],
         button_label: 'Next',
-        data: { trial_category:'questionnaire',unique_trial_id:2104},
+        data: { trial_category:'questionnaire',unique_trial_id:1504},
         on_finish: function (data) {
             data.response = JSON.parse(data.responses).Q0
         }
@@ -73,13 +73,13 @@ function questionnaire(){
         type: 'survey-multi-choice',
         preamble: "",
         questions: [{
-            prompt: "What best explains your social context when you completed this task?",
-            options: ['On your own','With friends/family'],
+            prompt: "What best explains your social context when you completed this HIT?",
+            options: ['I was on my own when I completed the HIT','I was surrounded by other people when I completed the HIT'],
             horizontal: false,
             required: true
         }],
         button_label: 'Next',
-        data: { trial_category:'questionnaire',unique_trial_id:2105},
+        data: { trial_category:'questionnaire',unique_trial_id:1505},
         on_finish: function (data) {
             data.response = JSON.parse(data.responses).Q0
         }
@@ -90,12 +90,15 @@ function questionnaire(){
         preamble: "",
         questions: [{
             prompt: "What best explains your location when you completed this task?",
-            options: ['At home - primary workstation','At home - a space other than your primary workstation', 'A temporary work space (e.g., library, cafe, park)', 'Commuting'],
+            options: ['Primary workstation dedicated for you',
+//            'A space other than your primary workstation',
+             'A temporary work space (e.g., library, cafe, park)',
+             'While commuting'],
             horizontal: false,
             required: true
         }],
         button_label: 'Next',
-        data: { trial_category:'questionnaire',unique_trial_id:2106},
+        data: { trial_category:'questionnaire',unique_trial_id:1506},
         on_finish: function (data) {
             data.response = JSON.parse(data.responses).Q0
         }
