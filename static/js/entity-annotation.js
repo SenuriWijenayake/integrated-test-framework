@@ -832,10 +832,8 @@ function entityAnnotation(){
                 return true;
             },
             on_finish: function(data){
-                data.response = JSON.parse(sessionStorage.getItem("entityAnnotation"));
-//                console.log(data.response);
-//                console.log(randomIndex[i].num_entities);
-//                console.log(randomIndex[i].entities);
+                var response = JSON.parse(sessionStorage.getItem("entityAnnotation"));
+                data.response = response['crowd-entity-annotation']['entities'];
             }
         });
     }
