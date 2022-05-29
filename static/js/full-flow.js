@@ -24,7 +24,7 @@ var allTests = [alertness(), comprehension(), mood(), personality(), cognitiveTe
 
 
 // Populate timeline with tests
-var randomIndex = jsPsych.randomization.shuffle([0]);
+var randomIndex = jsPsych.randomization.shuffle([0,1,2,3,4]);
 var taskNumber = 1;
 
 for (let t in randomIndex){
