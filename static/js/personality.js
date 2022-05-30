@@ -40,12 +40,31 @@ function personality(){
       button_label: 'Next',
       data: {trial_category:'personality',unique_trial_id:801},
       on_finish: function (data) {
-        console.log(data);
+
         data.response = JSON.parse(data.responses);
-        // Adjusting the score
+
+        // Calculating final score
+        score = {
+         'O' : 0,
+         'C' : 0,
+         'E' : 0,
+         'A' : 0,
+         'N' : 0
+        }
+
+        // Adjust scores
         for (let i in data.response){
             data.response[i] = data.response[i] + 1;
         }
+        // Calculate scores
+        score['O'] += (data.response['Q9'] - data.response['Q4'])/2;
+        score['C'] += (data.response['Q7'] - data.response['Q2'])/2;
+        score['E'] += (data.response['Q5'] - data.response['Q0'])/2;
+        score['A'] += (data.response['Q1'] - data.response['Q6'])/2;
+        score['N'] += (data.response['Q8'] - data.response['Q3'])/2;
+
+        data.response['score'] = score;
+
       }
     });
 
