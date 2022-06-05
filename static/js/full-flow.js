@@ -20,11 +20,12 @@ timeline.push(welcome_block);
 // Setting up tests
 
 var cognitiveTests  = [stroop(), flanker(), nBack(), taskSwitching(), pointing()];
-var allTests = [alertness(), comprehension(), mood(), personality(), cognitiveTests];
+var allTests = [classification()];
 
+// alertness(), comprehension(), mood(), personality(), cognitiveTests
 
 // Populate timeline with tests
-var randomIndex = jsPsych.randomization.shuffle([0,1,2,3,4]);
+var randomIndex = jsPsych.randomization.shuffle([0]);
 var taskNumber = 1;
 
 for (let t in randomIndex){
@@ -64,47 +65,47 @@ for (let t in randomIndex){
 
 // Setting up tasks
 
-var crowdsourcingTasks = [boundingBox(), entityAnnotation(), classification(), sentiment(), transcription()];
+//var crowdsourcingTasks = [boundingBox(), entityAnnotation(), classification(), sentiment(), transcription()];
+//
+//randomIndex = jsPsych.randomization.shuffle([0,1,2,3,4]);
+//
+//for (let t in randomIndex){
+//    var taskNumber = t*1+10;
+//    timeline.push({
+//        type: "html-button-response",
+//        stimulus: "<p><strong>Task "+ taskNumber +
+//        "</strong></p><p>&nbsp;</p>",
+//        choices: ['Continue'],
+//        on_load: function () {
+//            window.scroll(0,0);
+//        }
+//    });
+//    timeline = timeline.concat(crowdsourcingTasks[randomIndex[t]]);
+//}
+//
+//timeline.push({
+//    type: "html-button-response",
+//    stimulus: "<p><strong>You have completed all the tasks." +
+//    "</strong></p><p>Click the button below to answer a short questionnaire on your context and demographics.</p>",
+//    choices: ['Continue'],
+//    button_htm: ['<button class="jspsych-btn">%choice%</button>'],
+//    on_load: function () {
+//        window.scroll(0,0);
+//    }
+//});
 
-randomIndex = jsPsych.randomization.shuffle([0,1,2,3,4]);
-
-for (let t in randomIndex){
-    var taskNumber = t*1+10;
-    timeline.push({
-        type: "html-button-response",
-        stimulus: "<p><strong>Task "+ taskNumber +
-        "</strong></p><p>&nbsp;</p>",
-        choices: ['Continue'],
-        on_load: function () {
-            window.scroll(0,0);
-        }
-    });
-    timeline = timeline.concat(crowdsourcingTasks[randomIndex[t]]);
-}
-
-timeline.push({
-    type: "html-button-response",
-    stimulus: "<p><strong>You have completed all the tasks." +
-    "</strong></p><p>Click the button below to answer a short questionnaire on your context and demographics.</p>",
-    choices: ['Continue'],
-    button_htm: ['<button class="jspsych-btn">%choice%</button>'],
-    on_load: function () {
-        window.scroll(0,0);
-    }
-});
-
-timeline = timeline.concat(questionnaire());
-
-timeline.push({
-    type: "html-button-response",
-    stimulus: "<p><strong>Thank You!" +
-    "</strong></p><p>Click the button below to return to Mechanical Turk to submit your answers.</p>",
-    choices: ['Complete'],
-    button_htm: ['<button class="jspsych-btn">%choice%</button>'],
-    on_load: function () {
-        jsPsych.setProgressBar(1);
-    }
-});
+//timeline = timeline.concat(questionnaire());
+//
+//timeline.push({
+//    type: "html-button-response",
+//    stimulus: "<p><strong>Thank You!" +
+//    "</strong></p><p>Click the button below to return to Mechanical Turk to submit your answers.</p>",
+//    choices: ['Complete'],
+//    button_htm: ['<button class="jspsych-btn">%choice%</button>'],
+//    on_load: function () {
+//        jsPsych.setProgressBar(1);
+//    }
+//});
 
 jsPsych.init({
     timeline: timeline,

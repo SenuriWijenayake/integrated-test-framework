@@ -58,7 +58,7 @@ function questionnaire(){
         preamble: "",
         questions: [{
             prompt: "What device did you use to complete this HIT?",
-            options: ['Desktop','Laptop','Tablet'],
+            options: ['Desktop','Laptop'],
             horizontal: false,
             required: true
         }],
